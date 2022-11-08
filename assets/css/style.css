@@ -1174,6 +1174,7 @@ section .container {
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
   }
+  
 }
 
 .credits a {
@@ -1184,3 +1185,4 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
