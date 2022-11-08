@@ -245,3 +245,13 @@
   new PureCounter();
 
 })()
+
+const typed = new Typed('.typed', {
+  strings:['la tecnología y los peces ☺','la tecnología y los peces ☺'],
+  startDelay:300,
+  backSpeed:75,
+  backDelay:1500,
+  typeSpeed:40,
+  loop:true,
+  smartBackspace:false
+  });
