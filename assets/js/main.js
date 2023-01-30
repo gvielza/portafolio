@@ -247,9 +247,9 @@
 })()
 
 const typed = new Typed('.typed', {
-  strings:['la tecnología y los peces ☺','la tecnología y los peces ☺'],
+  strings:['el análisis de datos','la tecnología y los peces'],
   startDelay:300,
-  backSpeed:75,
+  backSpeed:80,
   backDelay:1500,
   typeSpeed:40,
   loop:true,
