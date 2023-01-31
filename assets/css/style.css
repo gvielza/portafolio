@@ -49,12 +49,12 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: ease-in-out 0.3s;
-  position: relative;
+ 
   height: 100vh;
   display: flex;
   align-items: center;
-  z-index: 997;
-  overflow-y: auto;
+ 
+  
 }
 
 #header * {
@@ -1184,6 +1184,9 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+.h1_inicio{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
 }
 
 
