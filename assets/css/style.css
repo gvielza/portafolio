@@ -49,12 +49,12 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: ease-in-out 0.3s;
- 
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
- 
-  
+  z-index: 997;
+  overflow-y: auto;
 }
 
 #header * {
