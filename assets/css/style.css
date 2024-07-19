@@ -11,13 +11,23 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/fondo.png") top right no-repeat;
+  background: #040404 url("../img/Designer\ \(2\).jpeg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+}
+body::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(12, 12, 12, 0.5); /* Ajusta la opacidad según tus necesidades */
+  z-index: -1; /* Debe estar por encima del ::before pero debajo del contenido */
 }
 
 @media (min-width: 1024px) {
