@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="keywords" content="tecnología, diseño, desarrollo web, programación, UX, UI, tutoriales, herramientas de desarrollo, tendencias tecnológicas, diseño web">
+    <meta name="author" content="Gionnelly Vielza">
+    <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Favicons -->
+    <link href="{{ site.baseurl }}/assets/img/cropped-cropped-logo-circular.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ site.baseurl }}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+    
+
+    <!-- Vendor JS Files -->
+    <script src="{{ site.baseurl }}/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</body>
+
+</html>
