@@ -1,0 +1,11 @@
+title: Blog de Tecnología, Diseño y Desarrollo Web
+description: Blog sobre tecnología, diseño y desarrollo web.
+baseurl: "" # La URL base para tu proyecto GitHub Pages
+url: "https://gvielza.github.io/portafolio" # URL de tu sitio
+
+# Include all the directories you want Jekyll to process
+include: 
+  - blog/posts/*
+  - _includes
+  - _layouts
+  -blog
