@@ -18,8 +18,13 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://gvielza.github.io/portafolio/blog.html</loc>
+  <loc>https://gvielza.github.io/portafolio/blog/blog.html</loc>
   <lastmod>2024-07-12T16:33:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gvielza.github.io/portafolio/blog/posts/lenguaje-mas-usados-en-argentina.html</loc>
+  <lastmod>2024-07-19T16:33:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
