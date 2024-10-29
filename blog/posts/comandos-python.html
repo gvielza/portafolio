@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes de Programación Más Usados en Argentina</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="../../assets/img/cropped-cropped-logo-circular.png" rel="icon">
+
+    <!-- Template Main CSS File -->
+    
+    <link href="../../assets/css/estilos_entrada.css" rel="stylesheet"> <!-- Ruta actualizada -->
+  
+</head>
+<body>
+    <header id="header_blog">
+        <div class="container">
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link" href="../blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="../../index.html">Inicio</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article>
+                <h1>VSCode</h1>
+                <p><strong>Activar ejecución de scripts de la PowerShell en la consola del Visual Studio Code</strong></p>
+                <p>Una de las formas que puede aparecer el error a la hora de activar el entorno virtual</p>
+                <img src="/blog/img/error_python.png" alt="" srcset="">
+
+                <p>Este error se debe a que en PowerShell las políticas de ejecución de scripts están deshabilitadas de manera predeterminada por razones de seguridad. Para solucionar esto, debes cambiar la política de ejecución de PowerShell para permitir la ejecución de scripts. Sigue estos pasos para hacerlo desde la terminal de Visual Studio Code (VS Code):
+<br>      1. Abre una Terminal en VS Code:
+                    
+                    Ve a Terminal > Nueva Terminal en la barra de menú de VS Code y selecciona PowerShell como el tipo de terminal si no está ya abierto.
+                    <br>2. Ejecuta el Comando para Cambiar la Política de Ejecución:
+                    
+                    En la terminal, escribe el siguiente comando y presiona Enter:</p>
+                    <p><i>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</i></p>
+                    <br>3. Confirma el Cambio:
+
+                    Aparecerá una advertencia. Escribe Y (Sí) y presiona Enter para aceptar el cambio.
+                    <br>4. Intenta Activar el Entorno Virtual Nuevamente:
+                    
+                    Una vez que hayas cambiado la política de ejecución, vuelve a intentar activar tu entorno virtual:
+
+               <br> <p><i>.venv\Scripts\Activate</i></p>
+
+               <br>
+
+               <h2>Notas:</h2>
+Si en el futuro deseas revertir este cambio, puedes volver a establecer la política de ejecución en Restricted ejecutando:
+<br><p><i>Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser</i></p>  
+<p>Para saber más al respecto, puedes visitar la documentación oficial de <a href="https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4" target="_blank">about_Execution_Policies</a></p>              
+</section>
+            </article>
+        </div>
+    </main>
+    <div class="credits">
+    
+        Desarrollado por <a href="">Gionnelly Vielza</a>
+      </div>
+    
+      <!-- Vendor JS Files -->
+      <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
+      <script src="../../assets/vendor/php-email-form/validate.js"></script>
+    
+      <!-- Template Main JS File -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="../../assets/js/main.js"></script>
+      
+         
+</body>
+</html>
