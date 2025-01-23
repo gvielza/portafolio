@@ -4,8 +4,8 @@ baseurl: "" # La URL base para tu proyecto GitHub Pages
 url: "https://gionnelly.sytes.net" # URL de tu sitio
 
 # Include all the directories you want Jekyll to process
-include: 
+include:  
   - blog/posts/*
   - _includes
   - _layouts
-  -blog
+  - blog
