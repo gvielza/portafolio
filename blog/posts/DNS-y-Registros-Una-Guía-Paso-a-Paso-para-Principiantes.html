@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aprende cómo resolver el error al activar entornos virtuales en Python usando PowerShell en VSCode. Cambia la política de ejecución con pasos detallados.">
+    <meta name="keywords"
+        content="Activar entornos virtuales Python, PowerShell VSCode, error entorno virtual Python, Set-ExecutionPolicy RemoteSigned, configurar PowerShell VSCode">
+    <title>DNS y Registros: Una Guía Paso a Paso para Principiantes</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="../../assets/img/cropped-cropped-logo-circular.png" rel="icon">
+
+    <link href="../../assets/css/estilos_entrada.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header_blog">
+        <div class="container">
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link" href="../blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="../../index.html">Inicio</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article>
+                <title>DNS y Registros: Una Guía Paso a Paso para Principiantes</title>
+
+
+                <h1>DNS y Registros: Una Guía Paso a Paso para Principiantes</h1>
+
+
+                <p>¿Alguna vez te has preguntado cómo tu navegador sabe a dónde dirigirte cuando escribes un nombre de
+                    dominio como "google.com" o "miempresa.com"? La respuesta está en el DNS (Sistema de Nombres de
+                    Dominio) y sus registros, dos conceptos que pueden sonar complicados, pero que en realidad son
+                    bastante sencillos de entender.
+
+                    En esta guía paso a paso, te explicaremos de forma clara y sin tecnicismos qué es el DNS, cómo
+                    funcionan sus registros y por qué son tan importantes para tu presencia online.
+                </p>
+                <h2>¿Qué es el DNS?</h2>
+
+
+                Imagina que internet es una enorme ciudad con millones de casas. Cada casa tiene una dirección única,
+                que en internet se llama dirección IP (ej: 192.168.1.1). Las direcciones IP son números largos y
+                difíciles de recordar. Por eso, usamos nombres de dominio (ej: google.com), que son más amigables para
+                los humanos.
+
+                El DNS actúa como un enorme directorio telefónico de internet. Cuando escribes un nombre de dominio en
+                tu navegador, el DNS se encarga de traducir ese nombre a la dirección IP correspondiente, permitiéndote
+                acceder al sitio web que buscas. Es como si le preguntaras al directorio telefónico la dirección de una
+                persona a partir de su nombre.
+
+                <h2>¿Qué son los Registros DNS?</h2>
+
+                Los registros DNS son entradas que se almacenan en los servidores DNS. Estas entradas contienen
+                información clave sobre un dominio, como su dirección IP, dónde se encuentran sus servidores de correo y
+                otras configuraciones importantes.
+
+                <p>En otras palabras, los dns son archivos de zona que permiten a nuestra web a través de un dominio,
+                    publicarnos y
+                    obtener extensiones de ellos, subdominios y correos electrónicos</p>
+
+                <h3>Existen diferentes tipos de registros DNS, cada uno con una función específica:</h3>
+
+
+                <li>Registro <strong><u>A</u></strong>: El más básico. Asocia un nombre de dominio a una dirección IPv4.
+                    Es decir, le dice a internet: "Este nombre de dominio apunta a esta dirección IP".
+                </li>
+                <li>Registro <strong><u>AAAA</u></strong>: Similar al registro A, pero asocia un nombre de dominio a una
+                    dirección IPv6. Las IPv6 son las direcciones IP del futuro, más largas y necesarias para el
+                    crecimiento de internet.
+                </li>
+                <li>Registro <strong><u>CNAME</u></strong>: Define un alias para un nombre de dominio. Es como decir:
+                    "Este nombre de dominio es en realidad un alias de este otro nombre". Se usa para subdominios y
+                    otros casos.
+                </li>
+                <li>Registro <strong><u>MX</u></strong>: Indica qué servidor maneja el correo electrónico para un
+                    dominio. Es como decir: "Si quieres enviar un correo a este dominio, envíalo a este servidor".
+                </li>
+                <li>Registro <strong><u>TXT</u></strong>: Permite agregar texto arbitrario a los registros DNS, útil
+                    para verificación de dominio y otros fines.
+                </li>
+                <li>Registro <strong><u>NS</u></strong> : Identifica los servidores de nombres autoritativos para un
+                    dominio. Es como decir: "Estos servidores son los que conocen los registros DNS de este dominio".
+                </li>
+
+                <h2>¿Por qué son importantes los Registros DNS?</h2>
+
+                <p>Los registros DNS son esenciales para que tu sitio web, correos electrónicos y otros servicios
+                    funcionen correctamente en internet. Sin registros DNS configurados adecuadamente, los usuarios no
+                    podrán acceder a tu sitio web, ni recibir correos electrónicos enviados a tu dominio.
+                </p>
+                <h3>Además, los registros DNS son cruciales para:</h3>
+
+                <p>-Redirigir tu dominio a la IP correcta: Asegura que tu sitio web sea accesible.</p>
+                <p>-Recibir correos electrónicos: Permite que los correos enviados a tu dominio lleguen a tu servidor de
+                    correo.
+                </p>
+                <p>-Autenticar tu dominio: A través de registros TXT como SPF, DKIM y DMARC, puedes proteger tu dominio
+                    de fraudes y suplantación de identidad.
+                </p>
+                <p>-Redirigir subdominios: Si tienes un blog o un área de miembros en tu sitio web, podrás redirigir los
+                    subdominios correctamente.
+                </p>
+
+
+                <h2>¿Cómo configurar tus Registros DNS?</h2>
+
+                <p>Generalmente, no tendrás que lidiar con la configuración de DNS directamente, ya que tu proveedor de
+                    hosting o tu registrador de dominios te proporcionará las herramientas necesarias.
+                </p>
+                <h3>Estos son los pasos generales:</h3>
+
+                <p>Accede al panel de control de tu proveedor: Ya sea el panel de control de tu hosting o el panel de tu
+                    registrador de dominios.
+                </p>
+                <p>Busca la sección de DNS: Generalmente se encuentra bajo el nombre de "DNS", "Gestión de DNS",
+                    "Registros DNS" o algo similar.
+                </p>
+                <p>Agrega o edita los registros: Dependiendo de lo que necesites, podrás agregar nuevos registros,
+                    editar los existentes o borrar los que no sean necesarios.
+                </p>
+                <p>Guarda los cambios: Una vez que hayas realizado los cambios, asegúrate de guardarlos para que se
+                    apliquen correctamente.
+                </p>
+
+                <h2>La Propagación del DNS</h2>
+
+                <p>Después de realizar los cambios en tus registros DNS, no se harán efectivos de forma instantánea. Es
+                    necesario que la información se propague por toda la red de servidores DNS, lo cual puede tardar
+                    desde unos pocos minutos hasta 48 horas, dependiendo del tipo de cambio y de tu proveedor. Este
+                    proceso se conoce como "propagación del DNS".
+                </p>
+                <h4>Conclusión</h4>
+                <p>El DNS y los registros DNS pueden parecer complicados al principio, pero en realidad son una parte
+                    fundamental de la infraestructura de internet. Con esta guía paso a paso, esperamos haberte
+                    proporcionado una comprensión básica de cómo funciona este sistema y por qué es tan importante para
+                    tu presencia online.
+
+                    Ahora que tienes una idea clara, te animamos a explorar tu panel de control de DNS y familiarizarte
+                    con los diferentes tipos de registros. ¡Verás que no es tan difícil como parece!
+
+                </p>
+
+
+                <p>¿Te ha resultado útil esta guía? ¡Compártela con tus amigos y colegas! 
+                  </a></p>
+
+                <p>¿Necesitas ayuda para configurar tus registros DNS? <a
+                        href="../../index.html#contact">¡Contáctanos!</a>
+                </p>
+
+
+
+            </article>
+        </div>
+    </main>
+    <div class="credits">
+
+        Desarrollado por <a href="">Gionnelly Vielza</a>
+    </div>
+
+    <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

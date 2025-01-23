@@ -1,0 +1,81 @@
+body{
+    text-align: center;
+    background:linear-gradient(to left,DeepSkyBlue,white);
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  h1{
+    animation: moverizquierda 2s ease-in-out;
+  }
+  nav{
+    visibility: hidden;
+  }
+button{
+    
+    margin-top: 20px;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color:blueviolet;
+}
+.spinner{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+
+/* Spinner de loading.io*/
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+@keyframes moverizquierda{
+  0%{
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+
+  
